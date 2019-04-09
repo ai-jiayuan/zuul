@@ -12,8 +12,8 @@
 	<artifactId>yzj-zuul</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>xl-zuul</name>
-	<description>XL service zuul</description>
+	<name>yzj-zuul</name>
+	<description>yzj-zuul service zuul</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
