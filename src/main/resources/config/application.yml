@@ -3,7 +3,7 @@
 spring:
   #该配置文件中的配置，对应的服务名称是 xl-gateway
   application:
-    name: xl-zuul
+    name: yzj-zuul
   profiles:
     active: dev
   jackson:
