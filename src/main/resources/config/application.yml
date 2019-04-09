@@ -1,0 +1,73 @@
+
+
+spring:
+  #该配置文件中的配置，对应的服务名称是 xl-gateway
+  application:
+    name: xl-zuul
+  profiles:
+    active: dev
+  jackson:
+    serialization.indent_output: true
+
+
+zuul:
+  host:
+      connect-timeout-millis: 10000
+      socket-timeout-millis: 60000
+  ribbon:
+    eager-load:
+      enabled: true
+  retryable: true
+
+ribbo
+
+
+
+
+
+
+
+
+
+
+
+#端口
+server:
+  port: 9000
+
+#监控
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+#Eureka相关配置
+eureka:
+    client:
+        instance-info-replication-interval-seconds: 10 #复制实例变化信息到eureka服务器所需要的时间间隔（s），默认为30秒
+        registry-fetch-interval-seconds: 10 #从Eureka服务器端获取注册信息的间隔时间，单位：秒
+    instance:
+        appname: xl-zuul
+        prefer-ip-address: true
+        instanceId: xl-zuul:${spring.application.instance-id:${random.value}}:${server.port}
+        lease-renewal-interval-in-seconds: 5 # eureka客户需要多长时间发送心跳给eureka服务器，表明它仍然活着,默认为30 秒
+        lease-expiration-duration-in-seconds: 10 #Eureka服务器在接收到实例的最后一次发出的心跳后，需要等待多久才可以将此实例删除，默认为90秒
+#        status-page-url-path: ${spring.management.context-path}/info
+#        health-check-url-path: ${spring.management.context-path}/health
+
+
+
+
+
+
+
+
+
+
+
+
+
