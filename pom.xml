@@ -8,8 +8,8 @@
 		<version>2.1.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.uniccc</groupId>
-	<artifactId>xl-zuul</artifactId>
+	<groupId>com.yzj</groupId>
+	<artifactId>yzj-zuul</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>xl-zuul</name>
